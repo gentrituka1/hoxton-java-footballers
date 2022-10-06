@@ -1,5 +1,7 @@
 package com.footballers.footballers;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,6 +12,7 @@ public class Team {
     @GeneratedValue
     public int id;
     public String name;
+    public List<Player> players;
 
     public Team () {
     }
